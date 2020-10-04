@@ -40,8 +40,6 @@ public class Util {
     public static SessionFactory createSessionFactory() {
         SessionFactory sessionFactory = null;
 
-
-        if (sessionFactory == null) {
             try {
                 Properties prop = new Properties();
 
@@ -66,7 +64,6 @@ public class Util {
             } catch (HibernateException e) {
                 e.printStackTrace();
             }
-        }
             return sessionFactory;
     }
 
